@@ -71,7 +71,7 @@ type t = |
               (type_constructor_path (type_constructor))))))))
   (type_definition
     (type_binding
-      (type_variable (type_constructor))
+      (type_variable)
       (type_constructor)
       (variant_declaration
         (constructor_declaration
