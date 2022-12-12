@@ -10750,7 +10750,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "_capitalized_identifier"
+              "name": "_constructor_name"
             }
           ]
         }
