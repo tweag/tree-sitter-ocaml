@@ -111,30 +111,30 @@ type t = [< `A > `A ]
     (type_binding
       (type_constructor)
       (polymorphic_variant_type
-        (tag_specification (tag))
+        (tag_specification (tag (constructor_name)))
         (tag_specification
-          (tag)
+          (tag (constructor_name))
           (type_constructor_path (type_constructor))))))
   (type_definition
     (type_binding
       (type_constructor)
       (polymorphic_variant_type
         (type_constructor_path (type_constructor))
-        (tag_specification (tag)))))
+        (tag_specification (tag (constructor_name))))))
   (type_definition
     (type_binding
       (type_constructor)
       (polymorphic_variant_type
         (tag_specification
-          (tag)
+          (tag (constructor_name))
           (type_constructor_path (type_constructor))
           (type_constructor_path (type_constructor))))))
   (type_definition
     (type_binding
       (type_constructor)
       (polymorphic_variant_type
-        (tag_specification (tag))
-        (tag)))))
+        (tag_specification (tag (constructor_name)))
+        (tag (constructor_name))))))
 
 ===========================
 Package types
