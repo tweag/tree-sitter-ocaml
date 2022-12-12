@@ -4833,7 +4833,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "constructor_name",
@@ -5165,7 +5165,17 @@
   {
     "type": "type_variable",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "type_constructor",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "typed_class_expression",
