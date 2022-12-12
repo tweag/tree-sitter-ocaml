@@ -13,30 +13,30 @@ type +!'a t = 'a
 (compilation_unit
   (type_definition
     (type_binding
-      (type_variable)
+      (type_variable (type_constructor))
       (type_constructor)
-      (type_variable)))
+      (type_variable (type_constructor))))
   (type_definition
     (type_binding
-      (type_variable)
-      (type_variable)
+      (type_variable (type_constructor))
+      (type_variable (type_constructor))
       (type_constructor)
-      (type_variable)))
+      (type_variable (type_constructor))))
   (type_definition
     (type_binding
-      (type_variable)
+      (type_variable (type_constructor))
       (type_constructor)
-      (type_variable)))
+      (type_variable (type_constructor))))
   (type_definition
     (type_binding
-      (type_variable)
+      (type_variable (type_constructor))
       (type_constructor)
-      (type_variable)))
+      (type_variable (type_constructor))))
   (type_definition
     (type_binding
-      (type_variable)
+      (type_variable (type_constructor))
       (type_constructor)
-      (type_variable))))
+      (type_variable (type_constructor)))))
 
 ===========================
 Type constructors
@@ -226,7 +226,7 @@ type t = t as 't
       (type_constructor)
       (aliased_type
         (type_constructor_path (type_constructor))
-        (type_variable)))))
+        (type_variable (type_constructor))))))
 
 ===========================
 Parenthesized types

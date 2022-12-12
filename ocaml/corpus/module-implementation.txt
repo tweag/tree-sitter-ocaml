@@ -33,8 +33,9 @@ let* x and* y
     (let_binding
       (value_name)
       (polymorphic_type
-        (type_variable)
-        (constructed_type (type_variable) (type_constructor_path (type_constructor))))
+        (type_variable (type_constructor))
+        (constructed_type (type_variable (type_constructor))
+        (type_constructor_path (type_constructor))))
       (value_path (value_name))))
   (value_definition
     (let_binding
