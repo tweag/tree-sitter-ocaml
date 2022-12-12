@@ -10707,11 +10707,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "_identifier"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "_capitalized_identifier"
+              "name": "_type_constructor"
             }
           ]
         }
@@ -10729,11 +10725,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "_identifier"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "_capitalized_identifier"
+              "name": "_constructor_name"
             }
           ]
         }
