@@ -14,8 +14,8 @@ val x : 'a . 'a
   (value_specification
     (value_name)
     (polymorphic_type
-      (type_variable (type_constructor))
-      (type_variable (type_constructor)))))
+      (type_variable (type_variable_name))
+      (type_variable (type_variable_name)))))
 
 ==============================
 Include

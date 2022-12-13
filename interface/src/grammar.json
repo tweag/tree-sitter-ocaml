@@ -10580,6 +10580,24 @@
       "named": true,
       "value": "instance_variable_name"
     },
+    "_type_variable_name": {
+      "type": "ALIAS",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "_capitalized_identifier"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "_identifier"
+          }
+        ]
+      },
+      "named": true,
+      "value": "type_variable_name"
+    },
     "_module_name": {
       "type": "ALIAS",
       "content": {
@@ -10703,13 +10721,8 @@
           "value": "'"
         },
         {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_type_constructor"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "_type_variable_name"
         }
       ]
     },
@@ -10723,6 +10736,10 @@
         {
           "type": "CHOICE",
           "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_value_name"
+            },
             {
               "type": "SYMBOL",
               "name": "_constructor_name"
@@ -10838,7 +10855,8 @@
     "_instance_variable_name",
     "_module_name",
     "_module_type_name",
-    "_constructor_name"
+    "_constructor_name",
+    "_type_variable_name"
   ],
   "supertypes": [
     "_structure_item",
